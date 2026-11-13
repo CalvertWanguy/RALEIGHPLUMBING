@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumbing Services & Capabilities | Raleigh Plumbing Company</title>
+  <meta name="description" content="Explore our specialized residential and commercial plumbing services in Raleigh, NC: Tankless water heaters, direct vent retrofits, 24/7 main shutoff valves, rough-in piping, and pressure diagnostics.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              dark: '#0A0F1D',
+              slate: '#1E293B',
+              light: '#F8FAFC',
+              border: '#E2E8F0',
+              copper: '#D97706',
+              copperHover: '#EA580C',
+              muted: '#64748B',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            'corporate': '4px',
+            'corporate-lg': '6px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .blueprint-grid {
+      background-image: linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .dark-grid {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    /* Mobile fullscreen overlay */
+    #mobileMenu {
+      transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+    }
+    #mobileMenu.invisible  { visibility: hidden; }
+    #mobileMenu.visible    { visibility: visible; }
+    #mobileMenu.opacity-0  { opacity: 0; }
+    #mobileMenu.opacity-100{ opacity: 1; }
+    #mobileMenu.translate-x-full { transform: translateX(100%); }
+    #mobileMenu.translate-x-0    { transform: translateX(0); }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased selection:bg-amber-100 selection:text-amber-900 pb-24 md:pb-0 overflow-x-hidden">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 font-medium text-center sm:text-left">
+        <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-brand-copper/20 text-amber-400 font-semibold text-[11px] tracking-wide uppercase flex-shrink-0">
+          24/7 Service
+        </span>
+        <span class="text-slate-300 text-[11px] sm:text-xs">Emergency Plumbing &amp; Scheduled Services &bull; Raleigh, NC</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-slate-300">
+        <a href="tel:+16628895272" class="flex items-center gap-1.5 hover:text-white transition-colors font-medium">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>Direct Dispatch: <strong class="text-white">+1 (662) 889-5272</strong></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
+        <div class="w-10 h-10 bg-brand-navy flex items-center justify-center rounded-corporate border border-slate-700 text-white font-heading font-extrabold text-sm tracking-wider group-hover:border-amber-500 transition-colors">
+          RPC
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-base sm:text-xl tracking-tight text-brand-navy block leading-none">
+            RALEIGH PLUMBING CO.
+          </span>
+          <span class="text-[9px] sm:text-[10px] font-semibold text-brand-muted uppercase tracking-widest block mt-1">
+            Plumbing Contractor &bull; Raleigh, NC
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-copper transition-colors">Home</a>
+        <a href="services.html" class="text-brand-copper font-bold border-b-2 border-brand-copper pb-1">Services</a>
+        <a href="projects.html" class="hover:text-brand-copper transition-colors">Recent Work</a>
+        <a href="about.html" class="hover:text-brand-copper transition-colors">About &amp; Reviews</a>
+        <a href="contact.html" class="hover:text-brand-copper transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2.5 rounded-corporate border border-slate-700 transition-all shadow-sm">
+          <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+          <span>+1 662-889-5272</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle (44x44px Touch Target) -->
+      <button id="mobileMenuBtn" type="button" class="md:hidden w-11 h-11 flex items-center justify-center text-slate-700 hover:text-brand-navy rounded-corporate hover:bg-slate-100 transition-colors" aria-label="Open Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── FULLSCREEN MOBILE OVERLAY MENU ── -->
+  <div id="mobileMenu" class="fixed inset-0 z-[200] bg-brand-navy invisible opacity-0 translate-x-full transition-all duration-300 ease-in-out md:hidden flex flex-col" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-slate-700/60">
+      <span class="font-heading font-extrabold text-white tracking-tight text-base">RALEIGH PLUMBING CO.</span>
+      <button id="mobileMenuClose" type="button" class="w-11 h-11 flex items-center justify-center text-slate-300 hover:text-white rounded-corporate hover:bg-slate-800 transition-colors" aria-label="Close Navigation">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav class="flex-1 overflow-y-auto px-5 py-6 space-y-1">
+      <a href="index.html"    class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="home" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Home</span>
+      </a>
+      <a href="services.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-bold text-brand-copper bg-slate-800/60 border border-slate-700/40 mb-1">
+        <i data-lucide="wrench" class="w-5 h-5 flex-shrink-0"></i><span>Services &amp; Capabilities</span>
+      </a>
+      <a href="projects.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="folder-open" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Recent Work</span>
+      </a>
+      <a href="about.html"   class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="users" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>About &amp; Reviews</span>
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="mail" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Contact &amp; Estimates</span>
+      </a>
+    </nav>
+    <div class="px-5 pb-8 pt-4 border-t border-slate-700/60 space-y-3">
+      <a href="tel:+16628895272" class="w-full flex items-center justify-center gap-3 bg-brand-copper hover:bg-brand-copperHover text-white font-heading font-bold py-4 rounded-corporate text-base shadow-lg transition-colors">
+        <i data-lucide="phone-call" class="w-5 h-5"></i>
+        <span>Call +1 (662) 889-5272</span>
+      </a>
+      <p class="text-center text-slate-400 text-xs">Available 24/7 — Raleigh, NC</p>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-brand-navy text-white py-16 dark-grid border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 px-3 py-1 rounded text-xs font-semibold text-slate-200">
+          <i data-lucide="wrench" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>CONTRACTOR CAPABILITIES &bull; WAKE COUNTY</span>
+        </div>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Comprehensive Plumbing Services &amp; Thermal Engineering
+        </h1>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Detailed technical specifications for our core services in Raleigh, NC. Every project is engineered to meet North Carolina plumbing codes with upfront pricing and zero commissions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICES LIST -->
+  <section class="py-20 bg-brand-light blueprint-grid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Service 01: Tankless Water Heaters -->
+      <div id="tankless" class="bg-white p-8 sm:p-10 rounded-corporate border border-brand-border shadow-sm scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="font-heading font-extrabold text-2xl text-slate-300">01</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-copper">High-Efficiency Thermal</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">
+              Tankless Water Heater Installation &amp; Retrofits
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We specialize in retrofitting old, space-consuming atmospheric tanks into wall-mounted gas and electric tankless water heaters (featuring top-tier brands like Navien and Rinnai).
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Precise Gas Line BTU Sizing</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> High-Grade Concentric PVC Venting</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Coordination with Elevation Electrical</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Endless On-Demand Hot Water</div>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-copper text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-corporate hover:bg-brand-copperHover transition-colors">
+                <span>Inquire About Tankless</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-xs text-slate-500 font-medium">Reclaims ~12 sq. ft. of floor space</span>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative min-h-[220px] rounded-corporate overflow-hidden border border-brand-border"><img src="assets/images/tankless-indoor.jpg" alt="Navien Tankless water heater installation" class="absolute inset-0 w-full h-full object-cover"></div>
+        </div>
+      </div>
+
+      <!-- Service 02: Direct Vent Water Heaters -->
+      <div id="directvent" class="bg-white p-8 sm:p-10 rounded-corporate border border-brand-border shadow-sm scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="font-heading font-extrabold text-2xl text-slate-300">02</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-copper">Replacement Engineering</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">
+              Direct Vent Water Heater Replacements (10+ Years)
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              If your current water heater is past its 10-year operational mark or showing signs of mineral scaling, rust-colored discharge, or slow recovery, we perform direct vent replacements.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Code-Compliant Flue Exhaust</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> New Expansion Tank Integration</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Sediment Purge &amp; Disposal of Old Tank</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Immediate Thermal Recovery Restored</div>
+            </div>
+            <div class="pt-4">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-navy text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-corporate hover:bg-slate-800 transition-colors">
+                <span>Schedule Tank Assessment</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative min-h-[220px] rounded-corporate overflow-hidden border border-brand-border"><img src="assets/images/tankless-outdoor.jpg" alt="Outdoor tankless water heater installation" class="absolute inset-0 w-full h-full object-cover"></div>
+        </div>
+      </div>
+
+      <!-- Service 03: Emergency Main Shutoff Valve -->
+      <div id="shutoff" class="bg-white p-8 sm:p-10 rounded-corporate border border-brand-border shadow-sm scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="font-heading font-extrabold text-2xl text-slate-300">03</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-copper">24/7 Immediate Dispatch</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">
+              Emergency Main Water Shutoff Valve Replacement
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              A calcified or snapped main shutoff gate valve is an urgent hazard that prevents homeowners from stopping catastrophic water leaks. We rapidly excise seized multi-turn gate valves and solder or press solid commercial 1/4-turn ball valves.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Full-Port Heavy-Duty Brass</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Zero-Resistance Full Flow</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 1/4-Turn Instant Emergency Action</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Complete Pressure Restoration</div>
+            </div>
+            <div class="pt-4">
+              <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-copper text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-corporate hover:bg-brand-copperHover transition-colors">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+                <span>Call Dispatch: +1 662-889-5272</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative min-h-[220px] rounded-corporate overflow-hidden border border-brand-border"><img src="assets/images/valve-replacement.jpg" alt="Commercial main shutoff ball valve" class="absolute inset-0 w-full h-full object-cover"></div>
+        </div>
+      </div>
+
+      <!-- Service 04: Rough-In Plumbing -->
+      <div id="roughin" class="bg-white p-8 sm:p-10 rounded-corporate border border-brand-border shadow-sm scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="font-heading font-extrabold text-2xl text-slate-300">04</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-copper">Architectural Infrastructure</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">
+              Rough-In Plumbing Systems (Residential &amp; Commercial)
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We execute the skeletal plumbing infrastructure for residential additions, commercial build-outs, and new home construction. Every sanitary drop, vent penetration, and PEX supply branch is laser-aligned and pressure-tested.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> PVC Waste, Drain &amp; Vent Networks</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> PEX-A Expansion Water Piping</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Commercial &amp; Residential Additions</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Guaranteed 100% Inspection Readiness</div>
+            </div>
+            <div class="pt-4">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-navy text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-corporate hover:bg-slate-800 transition-colors">
+                <span>Submit Blueprint / Quote</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative min-h-[220px] rounded-corporate overflow-hidden border border-brand-border"><img src="assets/images/cover-roughin.jpg" alt="Rough in plumbing sub-slab network" class="absolute inset-0 w-full h-full object-cover"></div>
+        </div>
+      </div>
+
+      <!-- Service 05: Water Pressure Diagnostics -->
+      <div id="diagnostics" class="bg-white p-8 sm:p-10 rounded-corporate border border-brand-border shadow-sm scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="font-heading font-extrabold text-2xl text-slate-300">05</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-copper">Mechanical Diagnostics</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">
+              Water Pressure Diagnostics &amp; Flow Calibration
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              If your home experiences a sudden drop in shower volume, banging pipes (water hammer), or unexplained flow loss, our precision hydrostatic tests determine the root cause immediately without guessing.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Pressure Reducing Valve (PRV) Replacements</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Static &amp; Dynamic Hydrostatic Gauging</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Mineral Calcification Identification</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Calibrated Whole-House Flow Rate</div>
+            </div>
+            <div class="pt-4">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-navy text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-corporate hover:bg-slate-800 transition-colors">
+                <span>Book Diagnostic Service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative min-h-[220px] rounded-corporate overflow-hidden border border-brand-border"><img src="assets/images/roughin-ceiling.jpg" alt="Plumbing ceiling joists and rough-in diagnostics" class="absolute inset-0 w-full h-full object-cover"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="bg-brand-navy text-white py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <h3 class="font-heading font-extrabold text-2xl text-white">Need a Service Not Listed or Have a Custom Layout?</h3>
+      <p class="text-slate-300 text-sm max-w-xl mx-auto">Call our direct line in Raleigh for honest mechanical evaluation and prompt scheduling.</p>
+      <div class="pt-2 flex justify-center gap-4">
+        <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-copper hover:bg-brand-copperHover text-white font-heading font-bold text-sm px-6 py-3 rounded-corporate">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+          <span>Call +1 (662) 889-5272</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navy text-slate-400 text-xs border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-slate-800 flex items-center justify-center rounded-corporate border border-slate-700 text-white font-heading font-bold text-xs tracking-wider">
+              RPC
+            </div>
+            <span class="font-heading font-bold text-base text-white tracking-tight">RALEIGH PLUMBING COMPANY</span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed max-w-sm">
+            Licensed residential and commercial plumbing contractor serving Raleigh, Wake County, and surrounding Triangle communities.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-xs text-white uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2 text-slate-300">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="projects.html" class="hover:text-white">Recent Work</a></li>
+            <li><a href="about.html" class="hover:text-white">About &amp; Reviews</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-xs text-white uppercase tracking-wider">Contact</h4>
+          <div class="space-y-2 text-slate-300">
+            <a href="tel:+16628895272" class="block font-semibold text-white hover:text-amber-400">+1 (662) 889-5272</a>
+            <span class="block">raleighplumbco@gmail.com</span>
+            <span class="block">Raleigh, NC, United States</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-[11px] text-slate-400 text-center sm:text-left">
+        &copy; 2025 Raleigh Plumbing Company. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-brand-navy/95 backdrop-blur-md border-t border-slate-800 p-2.5 px-4 flex items-center justify-between gap-3 shadow-2xl">
+    <div class="flex flex-col">
+      <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">24/7 Raleigh Dispatch</span>
+      <span class="font-heading font-bold text-sm text-white">+1 (662) 889-5272</span>
+    </div>
+    <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-copper active:bg-brand-copperHover text-white font-heading font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-corporate shadow-md">
+      <i data-lucide="phone-call" class="w-4 h-4"></i>
+      <span>Call Now</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,5 @@
+# Custom Redirects and Clean URLs for Netlify
+/services    /services.html   200
+/projects    /projects.html   200
+/about       /about.html      200
+/contact     /contact.html    200

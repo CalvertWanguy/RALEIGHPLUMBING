@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Verified Client Reviews | Raleigh Plumbing Company</title>
+  <meta name="description" content="Learn about Raleigh Plumbing Company: licensed residential & commercial plumbing contractor in Raleigh, NC. Transparent pricing, no upselling, and 100% verified client recommendations.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              dark: '#0A0F1D',
+              slate: '#1E293B',
+              light: '#F8FAFC',
+              border: '#E2E8F0',
+              copper: '#D97706',
+              copperHover: '#EA580C',
+              muted: '#64748B',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            'corporate': '4px',
+            'corporate-lg': '6px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .blueprint-grid {
+      background-image: linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .dark-grid {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    /* Mobile fullscreen overlay */
+    #mobileMenu {
+      transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+    }
+    #mobileMenu.invisible  { visibility: hidden; }
+    #mobileMenu.visible    { visibility: visible; }
+    #mobileMenu.opacity-0  { opacity: 0; }
+    #mobileMenu.opacity-100{ opacity: 1; }
+    #mobileMenu.translate-x-full { transform: translateX(100%); }
+    #mobileMenu.translate-x-0    { transform: translateX(0); }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased selection:bg-amber-100 selection:text-amber-900 pb-24 md:pb-0 overflow-x-hidden">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 font-medium text-center sm:text-left">
+        <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-brand-copper/20 text-amber-400 font-semibold text-[11px] tracking-wide uppercase flex-shrink-0">
+          24/7 Service
+        </span>
+        <span class="text-slate-300 text-[11px] sm:text-xs">Emergency Plumbing &amp; Scheduled Services &bull; Raleigh, NC</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-slate-300">
+        <a href="tel:+16628895272" class="flex items-center gap-1.5 hover:text-white transition-colors font-medium">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>Direct Dispatch: <strong class="text-white">+1 (662) 889-5272</strong></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
+        <div class="w-10 h-10 bg-brand-navy flex items-center justify-center rounded-corporate border border-slate-700 text-white font-heading font-extrabold text-sm tracking-wider group-hover:border-amber-500 transition-colors">
+          RPC
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-base sm:text-xl tracking-tight text-brand-navy block leading-none">
+            RALEIGH PLUMBING CO.
+          </span>
+          <span class="text-[9px] sm:text-[10px] font-semibold text-brand-muted uppercase tracking-widest block mt-1">
+            Plumbing Contractor &bull; Raleigh, NC
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-copper transition-colors">Home</a>
+        <a href="services.html" class="hover:text-brand-copper transition-colors">Services</a>
+        <a href="projects.html" class="hover:text-brand-copper transition-colors">Recent Work</a>
+        <a href="about.html" class="text-brand-copper font-bold border-b-2 border-brand-copper pb-1">About &amp; Reviews</a>
+        <a href="contact.html" class="hover:text-brand-copper transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2.5 rounded-corporate border border-slate-700 transition-all shadow-sm">
+          <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+          <span>+1 662-889-5272</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle (44x44px Touch Target) -->
+      <button id="mobileMenuBtn" type="button" class="md:hidden w-11 h-11 flex items-center justify-center text-slate-700 hover:text-brand-navy rounded-corporate hover:bg-slate-100 transition-colors" aria-label="Open Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── FULLSCREEN MOBILE OVERLAY MENU ── -->
+  <div id="mobileMenu" class="fixed inset-0 z-[200] bg-brand-navy invisible opacity-0 translate-x-full transition-all duration-300 ease-in-out md:hidden flex flex-col" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-slate-700/60">
+      <span class="font-heading font-extrabold text-white tracking-tight text-base">RALEIGH PLUMBING CO.</span>
+      <button id="mobileMenuClose" type="button" class="w-11 h-11 flex items-center justify-center text-slate-300 hover:text-white rounded-corporate hover:bg-slate-800 transition-colors" aria-label="Close Navigation">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav class="flex-1 overflow-y-auto px-5 py-6 space-y-1">
+      <a href="index.html"    class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="home" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Home</span>
+      </a>
+      <a href="services.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="wrench" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Services &amp; Capabilities</span>
+      </a>
+      <a href="projects.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="folder-open" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Recent Work</span>
+      </a>
+      <a href="about.html"   class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-bold text-brand-copper bg-slate-800/60 border border-slate-700/40 mb-1">
+        <i data-lucide="users" class="w-5 h-5 flex-shrink-0"></i><span>About &amp; Reviews</span>
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 px-4 py-4 rounded-corporate text-base font-semibold text-slate-200 hover:bg-slate-800/50 hover:text-white transition-colors border border-transparent hover:border-slate-700/40">
+        <i data-lucide="mail" class="w-5 h-5 flex-shrink-0 text-amber-500"></i><span>Contact &amp; Estimates</span>
+      </a>
+    </nav>
+    <div class="px-5 pb-8 pt-4 border-t border-slate-700/60 space-y-3">
+      <a href="tel:+16628895272" class="w-full flex items-center justify-center gap-3 bg-brand-copper hover:bg-brand-copperHover text-white font-heading font-bold py-4 rounded-corporate text-base shadow-lg transition-colors">
+        <i data-lucide="phone-call" class="w-5 h-5"></i>
+        <span>Call +1 (662) 889-5272</span>
+      </a>
+      <p class="text-center text-slate-400 text-xs">Available 24/7 — Raleigh, NC</p>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-brand-navy text-white py-16 dark-grid border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 px-3 py-1 rounded text-xs font-semibold text-slate-200">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>CONTRACTOR PHILOSOPHY &bull; RALEIGH, NC</span>
+        </div>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Contractor Integrity, Honest Advice &amp; Direct Accountability
+        </h1>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Why homeowners, commercial property managers, and general contractors in Raleigh trust our technicians with their critical plumbing and thermal infrastructure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & VALUES -->
+  <section class="py-20 bg-white border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy tracking-tight">
+            The Commission-Free Plumbing Philosophy
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Large corporate plumbing chains often incentivize their technicians with high commissions, pushing them to sell unnecessary whole-home repipes or expensive water filtration systems for simple valve failures.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            At <strong>Raleigh Plumbing Company</strong>, we are master mechanical craftsmen first. We isolate the root problem, provide straightforward advice on what needs immediate repair versus what can wait, and quote honest prices before we turn a wrench.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="p-4 bg-brand-light rounded-corporate border border-brand-border">
+              <div class="flex items-center gap-2 font-heading font-bold text-sm text-brand-navy mb-1">
+                <i data-lucide="crosshair" class="w-4 h-4 text-brand-copper"></i>
+                <span>Root-Cause Troubleshooting</span>
+              </div>
+              <p class="text-xs text-slate-600">We fix the actual mechanical failure, not just the symptoms.</p>
+            </div>
+            <div class="p-4 bg-brand-light rounded-corporate border border-brand-border">
+              <div class="flex items-center gap-2 font-heading font-bold text-sm text-brand-navy mb-1">
+                <i data-lucide="award" class="w-4 h-4 text-brand-copper"></i>
+                <span>Strict Code Compliance</span>
+              </div>
+              <p class="text-xs text-slate-600">Built to exceed North Carolina building codes and pass inspections.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Real Profile Photo of Technician -->
+          <div class="rounded-corporate overflow-hidden border border-brand-border bg-slate-900 shadow-sm">
+            <img src="assets/images/profile.jpg" alt="Raleigh Plumbing Company Technician" class="w-full h-48 object-cover">
+            <div class="p-4 bg-brand-light border-t border-brand-border">
+              <span class="font-heading font-bold text-xs text-brand-navy block">Certified Field Craftsmanship</span>
+              <span class="text-[11px] text-slate-500">Documented tankless &amp; rough-in installations in Raleigh, NC</span>
+            </div>
+          </div>
+
+          <!-- Trade Partner Feature Card -->
+          <div class="bg-brand-light p-6 rounded-corporate border border-brand-border">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-brand-navy text-amber-400 rounded-corporate flex items-center justify-center">
+                <i data-lucide="handshake" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-sm text-brand-navy">Trade Partner Synergy</h3>
+                <span class="text-xs text-slate-500">Working alongside Elevation Electrical</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">
+              Modern tankless water heater retrofits frequently require breaker upgrades or dedicated electrical sub-panels. Through our close collaboration with trusted local trades like <strong>Elevation Electrical</strong>, we coordinate multi-trade execution without scheduling delays.
+            </p>
+            <span class="text-[11px] font-semibold text-brand-navy block">&bull; Electrical &amp; Mechanical Codes Unified</span>
+          </div>
+
+          <!-- Fast Facts -->
+          <div class="bg-brand-navy text-white p-6 rounded-corporate border border-slate-700">
+            <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-amber-400 mb-3">Company Snapshot</h4>
+            <div class="space-y-2 text-xs text-slate-300">
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Headquarters</span>
+                <strong class="text-white">Raleigh, North Carolina</strong>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Coverage Area</span>
+                <strong class="text-white">Raleigh &amp; Wake County</strong>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-800">
+                <span>Emergency Dispatch</span>
+                <strong class="text-emerald-400 font-bold">24 Hours / 7 Days</strong>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Licensing</span>
+                <strong class="text-white">Residential &amp; Commercial</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED CLIENT REVIEWS SECTION -->
+  <section class="py-20 bg-brand-light blueprint-grid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-copper uppercase tracking-wider mb-2">
+          <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+          <span>Client Feedback &bull; Public Record</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-brand-navy tracking-tight">
+          What Our Clients Say About Our Service
+        </h2>
+        <p class="text-brand-muted text-sm mt-2">
+          Genuine reviews from homeowners and contractors in the Raleigh area.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Featured Review 1: Zach Pannaman -->
+        <div class="bg-brand-navy text-white p-8 rounded-corporate border border-slate-700 shadow-lg relative flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-emerald-950/80 text-emerald-400 border border-emerald-800 px-2.5 py-1 rounded text-xs font-semibold mb-6">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              <span>Verified Public Recommendation</span>
+            </div>
+            <blockquote class="font-heading font-bold text-2xl text-white leading-snug mb-4">
+              &ldquo;Great Service, honest advice.&rdquo;
+            </blockquote>
+          </div>
+          <div class="pt-6 border-t border-slate-800 flex items-center justify-between text-xs">
+            <div>
+              <strong class="font-heading font-bold text-sm text-white block">Zach Pannaman</strong>
+              <span class="text-slate-400">Raleigh Homeowner</span>
+            </div>
+            <div class="text-right">
+              <span class="text-amber-400 font-semibold block">September 29, 2025</span>
+              <span class="text-slate-400 text-[10px]">Public Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Metric & Trust Summary -->
+        <div class="bg-white p-8 rounded-corporate border border-brand-border flex flex-col justify-between shadow-sm">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-copper block mb-2">Customer Satisfaction</span>
+            <h3 class="font-heading font-extrabold text-2xl text-brand-navy mb-4">100% Recommendation Rate</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Every client who has engaged Raleigh Plumbing Company for emergency shutoffs, rough-in milestones, or tankless upgrades recommends our team for timeliness, honest pricing, and clean workmanship.
+            </p>
+            <div class="space-y-3 text-xs text-slate-700">
+              <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> No sales gimmicks or commission quotas</div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Direct communication with the lead technician</div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Transparent itemized estimates</div>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-slate-100 mt-6">
+            <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-navy hover:text-brand-copper transition-colors">
+              <span>Experience The Difference &bull; Request Estimate</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navy text-slate-400 text-xs border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-slate-800 flex items-center justify-center rounded-corporate border border-slate-700 text-white font-heading font-bold text-xs tracking-wider">
+              RPC
+            </div>
+            <span class="font-heading font-bold text-base text-white tracking-tight">RALEIGH PLUMBING COMPANY</span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed max-w-sm">
+            Licensed residential and commercial plumbing contractor serving Raleigh, Wake County, and surrounding Triangle communities.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-xs text-white uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2 text-slate-300">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="projects.html" class="hover:text-white">Recent Work</a></li>
+            <li><a href="about.html" class="hover:text-white">About &amp; Reviews</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-xs text-white uppercase tracking-wider">Contact</h4>
+          <div class="space-y-2 text-slate-300">
+            <a href="tel:+16628895272" class="block font-semibold text-white hover:text-amber-400">+1 (662) 889-5272</a>
+            <span class="block">raleighplumbco@gmail.com</span>
+            <span class="block">Raleigh, NC, United States</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-[11px] text-slate-400 text-center sm:text-left">
+        &copy; 2025 Raleigh Plumbing Company. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-brand-navy/95 backdrop-blur-md border-t border-slate-800 p-2.5 px-4 flex items-center justify-between gap-3 shadow-2xl">
+    <div class="flex flex-col">
+      <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">24/7 Raleigh Dispatch</span>
+      <span class="font-heading font-bold text-sm text-white">+1 (662) 889-5272</span>
+    </div>
+    <a href="tel:+16628895272" class="inline-flex items-center gap-2 bg-brand-copper active:bg-brand-copperHover text-white font-heading font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-corporate shadow-md">
+      <i data-lucide="phone-call" class="w-4 h-4"></i>
+      <span>Call Now</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Navy Blue Background Square with subtle rounded corners -->
+  <rect width="64" height="64" rx="10" fill="#0F172A"/>
+  
+  <!-- Subtle Industrial Border -->
+  <rect x="2" y="2" width="60" height="60" rx="8" fill="none" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Copper / Amber Accent Border in corner -->
+  <path d="M 46 2 L 62 2 L 62 18" fill="none" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Architectural Typography: RPC Monogram -->
+  <text x="32" y="42" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">RPC</text>
+  
+  <!-- Small Copper Pip Indicator -->
+  <circle cx="32" cy="50" r="2.5" fill="#D97706"/>
+</svg>
